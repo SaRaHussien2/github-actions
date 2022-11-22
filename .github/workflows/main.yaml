@@ -27,17 +27,8 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: |        
-          ls 
-          java -version
+        run: sh ./script.sh
 
-          echo Is Git installed
-          git --version
-          echo what about build tools?
-          mvn --version
-          gradle -version
-          echo what environment variables are available?
-          env
  
 
       # Runs a set of commands using the runners shell
